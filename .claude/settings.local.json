@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Get-ChildItem -Path \"E:\\\\Estudos\\\\JujuCroche\" -Force -ErrorAction SilentlyContinue)",
+      "Bash(Format-List)",
+      "Bash(npx create-vite@latest . --template react-ts --overwrite)",
+      "Bash(npm install *)",
+      "Bash(npx tailwindcss *)",
+      "Bash(node server/index.js)",
+      "Bash(curl -s http://localhost:3000/api/pecas)",
+      "Bash(git init *)",
+      "Bash(git add *)"
+    ]
+  }
+}
