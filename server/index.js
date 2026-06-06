@@ -22,8 +22,8 @@ app.use('/api/pecas', pecasRouter)
 if (process.env.NODE_ENV === 'production') {
   const distPath = join(__dirname, '..', 'dist')
   app.use(express.static(distPath))
-  // React Router: toda rota não-API retorna o index.html
-  app.get('*', (_req, res) => {
+  // React Router: toda rota não-API retorna o index.html (compatível com Express 5)
+  app.use((_req, res) => {
     res.sendFile(join(distPath, 'index.html'))
   })
 }
