@@ -28,7 +28,7 @@
     },
 
     /* Silencia aviso de depreciação do TypeScript 6 */
-    "ignoreDeprecations": "5.0"
+    "ignoreDeprecations": "6.0"
   },
   "include": ["src"]
 }
